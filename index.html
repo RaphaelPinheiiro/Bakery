@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Raphael Pinheiro">
+  <meta name="description" content="Portfolio for a baker">
+  <meta name="keywords" content="Bakery, baker, bread">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/dist/css/index.css">
+  <title>Bakery</title>
+</head>
+
+<body>
+  <div class="l-container">
+    <header id="inicio" class="l-header">
+      <h1 class="l-header__title">Bakery</h1>
+    </header>
+    <nav class="c-navbar">
+      <menu role="list" class="c-navbar__menu">
+        <li class="c-navbar__item">
+          <a href="#inicio" class="c-navbar__link">Início</a>
+        </li>
+        <li class="c-navbar__item">
+          <a href="#about" class="c-navbar__link">About</a>
+        </li>
+        <li class="c-navbar__item">
+          <button type="button" class="c-navbar__button">Coffee
+            <svg class="c-navbar__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24">
+              <path d="M12 14.308L8.192 10.5h7.616z" />
+            </svg>
+          </button>
+          <ul role="list" class="c-navbar__submenu">
+            <li class="c-navbar__sub-item">
+              <a href="#" class="c-navbar__sub-link">Cupcake</a>
+            </li>
+            <li class="c-navbar__sub-item">
+              <a href="#" class="c-navbar__sub-link">Donuts</a>
+            </li>
+            <li class="c-navbar__sub-item">
+              <a href="#" class="c-navbar__sub-link">Tortilla</a>
+            </li>
+            <li class="c-navbar__sub-item">
+              <a href="#" class="c-navbar__sub-link">Chocolate</a>
+            </li>
+          </ul>
+        </li>
+        <li class="c-navbar__item">
+          <a href="#" class="c-navbar__link">Contact</a>
+        </li>
+      </menu>
+    </nav>
+    <main class="l-main">
+      <figure class="l-main__photograph">
+        <img class="l-main__bakery" src="/src/image/01.jpg" alt="Photograph about bread">
+      </figure>
+      <aside class="l-main__information">
+        <h2 class="l-main__title">Made whith love</h2>
+        <p class="l-main__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quae accusantium eos. Obcaecati a repellat
+          facilis veritatis deleniti dolores ex sit ea error, modi aliquam nostrum reprehenderit blanditiis, fuga sint.
+        </p>
+        <button class="c-button">Let's go</button>
+      </aside>
+      <article id="about" class="l-main__about">
+        <h3 class="l-main__title text-white">About me</h3>
+        <figure class="l-main__perfil">
+          <img class="l-main__daniel" src="/src/image/perfil.jpg" alt="Photograph about Daniel Oliveira">
+          <figcaption class="l-main__name">Daniel Oliveira</figcaption>
+        </figure>
+        <p class="l-main__paragraph text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores optio
+          necessitatibus accusantium autem iste
+          vitae, sunt eos! Et suscipit magnam doloremque, iste quam officiis omnis velit harum nesciunt repellat
+          temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusamus, adipisci necessitatibus
+          molestias facere repellat quis, dolore a mollitia magnam possimus sunt ullam ratione reprehenderit repudiandae
+          nostrum qui distinctio expedita.</p>
+      </article>
+      <figure class="l-main__photograph opacity">
+        <img class="l-main__bakery" src="/src/image/02.jpg" alt="Photograph about slice bread">
+      </figure>
+      <aside class="l-main__memories">
+        <h3 class="l-main__title text-white">We create a delicious memories</h3>
+      </aside>
+    </main>
+    <footer class="l-footer">&copy;Bloom</footer>
+  </div>
+</body>
+
+</html>
