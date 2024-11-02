@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.l-footer {
+  @include flexCenter();
+  background-color: var(--clr-secondary-700);
+  color: var(--clr-grayscale-100);
+  padding: rem(20px);
+}

@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.l-header {
+  @include flexCenter();
+  background-color: var(--clr-primary-500);
+  padding: rem(16px);
+
+  &__title {
+    @include cormorant();
+    color: var(--clr-grayscale-100);
+    text-align: center;
+    width: 100%;
+  }
+}

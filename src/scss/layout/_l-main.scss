@@ -1,0 +1,88 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.l-main {
+  background-color: var(--clr-secondary-700);
+  display: grid;
+
+  @include breakPoints("medium") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__photograph {
+    @include flexCenter();
+  }
+
+  &__bakery {
+    @include fullContainer();
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .opacity {
+    opacity: 0.6;
+  }
+
+  &__information {
+    @include flexCenter();
+    flex-direction: column;
+    background-color: var(--clr-grayscale-100);
+    padding: rem(40px);
+    gap: rem(40px);
+  }
+
+  &__title {
+    @include playfair();
+    color: var(--clr-secondary-500);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__paragraph {
+    @include cormorantUpright();
+    color: var(--clr-secondary-700);
+    text-align: justify;
+    text-align-last: center;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    width: 100%;
+  }
+
+  .text-white {
+    color: var(--clr-grayscale-100);
+  }
+
+  &__about {
+    display: grid;
+    align-items: center;
+    row-gap: rem(40px);
+    padding: rem(40px);
+  }
+
+  &__perfil {
+    display: grid;
+    grid-template-columns: min(100px, 25%) 1fr;
+    gap: rem(20px);
+  }
+
+  &__daniel {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1;
+    width: 100%;
+  }
+
+  &__name {
+    @include cormorantUpright();
+    color: var(--clr-grayscale-100);
+    align-content: center;
+  }
+
+  &__memories {
+    @include flexCenter();
+    background-color: var(--clr-primary-500);
+    padding: rem(40px);
+    grid-column: 1 / -1;
+  }
+}
