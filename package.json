@@ -1,0 +1,14 @@
+{
+  "name": "bakery",
+  "version": "1.0.0",
+  "description": "Portfolio for a baker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/scss:dist/css"
+  },
+  "author": "Raphael Pinheiro",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.80.5"
+  }
+}
